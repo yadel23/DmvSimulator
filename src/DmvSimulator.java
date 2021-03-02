@@ -7,15 +7,15 @@ public class DmvSimulator {
 		System.out.println("Please wait until your number has been called.");
 
 		Random random = new Random();
-		int yourNum = random.nextInt(100) + 1;
+		int yourNum = random.nextInt(200) + 1;
 		System.out.println("Your number is " + yourNum + " please take a seat it will not take that long :|");
 
 		int nextNum = yourNum + 1;
 
-		for (int i = nextNum; i < 101; i++) {
+		for (int i = nextNum; i < 201; i++) {
 			System.out.println("Next Number is " + i + ": Please step up to the desk!");
 
-			if (i == 100) {
+			if (i == 200) {
 				for (int j = 1; j < yourNum; j++) {
 					System.out.println("Next Number is " + j + ": Please step up to the desk!");
 				}
@@ -25,6 +25,10 @@ public class DmvSimulator {
 
 		System.out.println("Last Number is " + yourNum + ": Please step up to the desk!!!!");
 
+		
+		
+		
+		
 		System.out.println(
 				"You do not have the required documents for me to file this for you, leave now, we are closed!!!!");
 	}
