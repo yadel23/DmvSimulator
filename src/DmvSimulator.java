@@ -25,11 +25,13 @@ public class DmvSimulator {
 
 		System.out.println("Last Number is " + yourNum + ": Please step up to the desk!!!!");
 
+		Random random2 = new Random();
+		int propNum = random2.nextInt(100) + 1;
 		
-		
-		
-		
-		System.out.println(
-				"You do not have the required documents for me to file this for you, leave now, we are closed!!!!");
+		if(propNum != 1) {
+			System.out.println("You do not have the required documents for me to file this for you, leave now, we are closed!!!!");
+		}
+		else 
+			System.out.println("Wow! you do have the right paperwork. I will get you squared up in a sec :)");
 	}
 }
